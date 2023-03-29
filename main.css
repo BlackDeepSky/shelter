@@ -59,7 +59,7 @@ header {
 /* /Main Page/ */
 
 .not-only {
-  height: 908px;
+  height: 100%;
   background: url(noise_lines_transparent@2X.png),
     radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
   background: url(assets/img/start-screen-background.jpg) no-repeat
@@ -70,6 +70,7 @@ header {
   padding: 180px 40px 0px 40px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .main-content {
   padding-top: 163px;
@@ -111,6 +112,9 @@ header {
   background: whitesmoke;
   transition: all 1s;
   cursor: pointer;
+}
+.main-img{
+  align-self: flex-end;
 }
 
 /* /section About/ */
@@ -171,7 +175,7 @@ header {
 .our-frends__slider {
   display: flex;
   justify-content: center;
-  gap: 90px;
+  gap: 5%;
 }
 .our-frends__slider__button button {
   width: 52px;
@@ -305,6 +309,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-content: center;
+  flex-wrap: wrap;
   gap: 30px;
 }
 .donation-content {
@@ -371,7 +376,8 @@ footer {
   padding: 40px 40px 0 40px;
   display: flex;
   justify-content: space-between;
-  gap: 160px;
+  flex-wrap: wrap;
+  gap: 15%;
 }
 .footer__contacts{
   display: flex;
@@ -443,3 +449,14 @@ footer {
 }
 
 /* /responsive design/ */
+@media screen and (max-width:1024px){
+  .our-frends__slider .card3{
+    display: none;
+  }
+  .donation__container{
+    justify-content: center;
+  }
+  .not-only__container{
+    justify-content: center;
+  }
+}
