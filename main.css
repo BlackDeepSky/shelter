@@ -473,4 +473,30 @@ button:nth-child(5) {
   .main-img{
     display: none;
   }
+  .about__container{
+    flex-wrap: wrap;
+  }
+  .card2{
+    display: none;
+  }
+  .our-frends__slider{
+    flex-wrap: wrap;
+    gap: 40%;
+  }
+  .our-frends__slider__button{
+    order: 3;
+  }
+  .our-frends__slider__card{
+    margin-bottom: 50px;
+  }
+  .help__list__items{
+    display: grid;
+    grid-template: 1fr 1fr/1fr 1fr;
+  }
+  .donation-img{
+    order: 2;
+  }
+  .footer__container{
+    justify-content: center;
+  }
 }
